@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="/">Authorization Demo</a>
+  <a class="navbar-brand" href="/">Stripe Demo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,6 +7,7 @@
   <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
     <% if user_signed_in? %>
+      <li class="nav-item"><%= link_to 'Shop', products_path, class: "nav-link #{current_class?(products_path)}" %>
       <li class="nav-item"><%= link_to 'How to use this Demo', pages_index_path, class: "nav-link #{current_class?(pages_index_path)}" %>
       <li class="nav-item"><%= link_to "Posts", posts_path, class: "nav-link #{current_class?(posts_path)}" %></li>
       <li class="nav-item"><%= link_to "My Posts", myposts_posts_path, class: "nav-link #{current_class?(myposts_posts_path)}" %></li>

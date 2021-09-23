@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: stripe_tutorial_production
-  username: stripe_tutorial
-  password: <%= ENV['AUTHORIZATION_DEMO_DATABASE_PASSWORD'] %>
+  # username: stripe_tutorial
+  # password: <%= ENV['AUTHORIZATION_DEMO_DATABASE_PASSWORD'] %>
